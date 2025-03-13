@@ -1,0 +1,134 @@
+footer {
+    padding: 1rem 0;
+    background-color: #222; 
+  margin-top: 30px;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+  
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+  
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+  
+      
+      .about {
+        max-width: 300px;
+  
+        h1 {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #fff; 
+        }
+  
+        p {
+          color: #bbb; 
+          line-height: 1.6;
+        }
+      }
+  
+    
+      .links-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+  
+        .links {
+          h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff; 
+          }
+  
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.1rem;
+            color: #bbb; 
+  
+            li {
+              cursor: pointer;
+              transition: color 0.2s ease-in-out;
+  
+              &:hover {
+                color: #ff6b6b; 
+              }
+            }
+          }
+        }
+      }
+  
+     
+      .contact {
+        max-width: 300px;
+  
+        h1 {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #fff; 
+        }
+  
+        .email-input {
+          display: flex;
+          align-items: center;
+  
+          input {
+            flex: 1;
+            padding: 1rem;
+            border-radius: 10px 0 0 10px;
+            border: none;
+            outline: none;
+            background: #333; 
+            font-size: 1rem;
+            color: #fff;
+  
+            &::placeholder {
+              color: #888; 
+            }
+          }
+  
+          button {
+            background-color: #ff6b6b;
+            color: #fff;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+  
+            &:hover {
+              background-color: #e63946;
+            }
+          }
+        }
+  
+      
+        .social-icons {
+          display: flex;
+          gap: 1.5rem;
+          margin-top: 1rem;
+  
+          a {
+            font-size: 1.8rem;
+            color: #bbb;
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  
+            &:hover {
+              color: #ff6b6b; 
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+  

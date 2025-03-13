@@ -1,0 +1,118 @@
+.testimonial-carousel {
+    width: 850px; 
+    margin: auto;
+    padding: 40px;
+    background: #f9f9f9; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+  
+    .testimonial-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    .testimonial-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   
+    }
+  
+    .testimonial-image {
+      width: 150px; 
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ddd;
+    }
+  
+    .message {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #444;
+      font-weight: 500;
+      max-width: 80%;
+    }
+  
+    .name {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #222;
+    }
+  
+    .position {
+      font-size: 1rem;
+      color: #777;
+    }
+  
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #e0e0e0;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      
+      &:hover {
+        background: #bbb;
+      }
+  
+      &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+  
+      &.left {
+        left: 15px;
+      }
+  
+      &.right {
+        right: 15px;
+      }
+    }
+  
+    .dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+  
+      .dot {
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        background: #ddd;
+        border-radius: 50%;
+        transition: background 0.3s ease;
+  
+        &.active {
+          background: #333;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .testimonial-carousel {
+      width: 90%;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .testimonial-carousel {
+      width: 100%;
+      padding: 20px;
+  
+      .message {
+        font-size: 1rem;
+      }
+    }
+  }

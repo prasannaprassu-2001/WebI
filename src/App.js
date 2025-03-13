@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import ClientLogo from "./Components/ClientLogo";
+import Footer from "./Components/Footer";
+import Hero from "./Components/Hero";
+import MarqueeNews from "./Components/MarqueeNews";
+import Navbar from "./Components/Navbar";
+import Services from "./Components/Services";
+import TestimonialCarousel from "./Components/TestimonialCarousel";
+
+import WhyChooseUs from "./Components/WhyChooseUs";
+
+
+const newsHeadlines = [
+  "Breaking: Market hits all-time high!",
+  "Sports: Local team wins championship!",
+  "Weather: Expect heavy rains tomorrow!",
+  "Tech: New AI model surpasses human IQ!",
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+<Navbar/>
+<Hero/>
+<ClientLogo/>
+<Services/>
+<WhyChooseUs/>
+<TestimonialCarousel/>
+<MarqueeNews newsItems={newsHeadlines}/>
+<Footer/>
     </div>
   );
 }
